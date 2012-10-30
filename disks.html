@@ -1,0 +1,61 @@
+<html>
+ <body>
+ 
+<script type="text/javascript">
+ if (window.XMLHttpRequest)
+   {// code for IE7+, Firefox, Chrome, Opera, Safari
+   xmlhttp=new XMLHttpRequest();
+   }
+ else
+   {// code for IE6, IE5
+   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+   }
+ xmlhttp.open("GET","XMLDisks.xml",false);
+ xmlhttp.send();
+ xmlDoc=xmlhttp.responseXML; 
+/* --------------------------------------------------------- */
+document.write("<table border='1'>");
+ var x=xmlDoc.getElementsByTagName("Disk");
+ for (i=0;i<x.length;i=i+4)
+   { 
+   document.write("<tr><td>");
+   for (j=0;j<3;j++)
+   {
+   document.write(x[i+j].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+j].getElementsByTagName("Speed")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+j].getElementsByTagName("Glide")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+j].getElementsByTagName("Turn")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+j].getElementsByTagName("Fade")[0].childNodes[0].nodeValue);
+<!-- spacing between disks--> 
+ document.write("</td><td>");
+   document.write("</td><td>");
+document.write("</td><td>");
+   document.write("</td><td>");
+document.write("</td><td>");
+ document.write("</td><td>");
+   document.write("</td><td>");
+   }
+
+   document.write(x[i+3].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+3].getElementsByTagName("Speed")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+3].getElementsByTagName("Glide")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+3].getElementsByTagName("Turn")[0].childNodes[0].nodeValue);
+   document.write("</td><td>");
+   document.write(x[i+3].getElementsByTagName("Fade")[0].childNodes[0].nodeValue); 
+   document.write("</td></tr>");
+   
+   
+   }
+ document.write("</table>");
+/* ------------------------------------------------------- */
+ </script>
+ 
+</body>
+ </html>

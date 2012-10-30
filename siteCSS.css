@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1
+{
+	font:"Times New Roman", Times, serif;
+	font-size:36px;
+	color:#3C3;
+}
+
+body {
+	font: "Times New Roman", Times, serif;
+	background: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+
+
+/* ----------------------------- CLASSES -------------------------  */
+.header {
+	background:#360;
+}
+
+.container {
+	width: 80%;
+	max-width: 1260px;
+	min-width: 780px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background: #93A5C4;
+	padding-bottom: 10px;
+}
+
+.content {
+	padding: 10px 0;
+	width: 80%;
+	float: left;
+}
+
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
+}
+
+
+.hole_data{
+	width:1050px;
+	border:0;
+	column-gap:5px;
+	height:180;
+	
+}
+
+.NextPrevious{
+	width: 1000;
+	cellspacing:30;
+	cellpadding:30;
+	border: 0;
+}
+/*-----------------------------------------------------------------*/
+
+
+
+
+/* ------------------------------ Div ID's ------------------------- */
+#holeTitle
+{
+	font-size:35px;
+	font-style:oblique;
+	font-weight:bold;
+}
+
+
+
+td
+{
+}
+
+#hole1-1, #hole2-1, #hole3-1, #hole4-1, #hole5-1, #hole6-1, 
+#hole7-1, #hole8-1, #hole9-1, #hole10-1, #hole11-1, #hole12-1, 
+#hole13-1, #hole14-1, #hole15-1, #hole16-1, #hole17-1, #hole18-1
+{
+	<!--background-color:#F39;-->
+	width:360px;
+	height:200px;
+}
+
+
+
+#hole1-2, #hole2-2, #hole3-2, #hole4-2, #hole5-2, #hole6-2, 
+#hole7-2, #hole8-2, #hole9-2, #hole10-2, #hole11-2, #hole12-2, 
+#hole13-2, #hole14-2, #hole15-2, #hole16-2, #hole17-2, #hole18-2
+{
+	background-color:#063;
+	height:200px;
+	font-size:18px;
+}
+
+#content
+{
+	font:"Times New Roman", Times, serif;
+	size:12px;
+	/*color*/
+}
+/* ----------------------------------------------------------------- */
